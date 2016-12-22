@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="FacebookTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rci-Ej-rNh">
+                                <rect key="frame" x="157" y="316" width="60" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.25" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="FB">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="FBAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gOD-Az-FGh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyg-GM-r22" customClass="GIDSignInButton">
+                                <rect key="frame" x="157" y="273" width="60" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.14954377690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Zu6-HZ-d5r"/>
+                                    <constraint firstAttribute="height" constant="35" id="aCH-Zl-p7w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rci-Ej-rNh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D0j-XZ-I8K"/>
+                            <constraint firstItem="Rci-Ej-rNh" firstAttribute="height" secondItem="uyg-GM-r22" secondAttribute="height" id="I6g-8v-8sr"/>
+                            <constraint firstItem="uyg-GM-r22" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JYz-rH-42f"/>
+                            <constraint firstItem="Rci-Ej-rNh" firstAttribute="width" secondItem="uyg-GM-r22" secondAttribute="width" id="PPe-SS-glM"/>
+                            <constraint firstItem="Rci-Ej-rNh" firstAttribute="top" secondItem="uyg-GM-r22" secondAttribute="bottom" constant="8" id="cIS-Lo-1vz"/>
+                            <constraint firstItem="Rci-Ej-rNh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pjC-S5-DOo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258.39999999999998" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
